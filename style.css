@@ -1,0 +1,372 @@
+/* SavorySphere - Meal Subscription Service */
+/* Student Number: 17329543 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+}
+
+/* Navigation */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 22px;
+    color: #e67e22;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 60vh;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.hero h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin: 15px 0 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Section headings */
+h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #e67e22;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Why Choose Us */
+.features {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.feature-box h3 {
+    margin-bottom: 8px;
+}
+
+/* Pricing cards */
+.plans {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plan-card {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 25px 20px;
+    width: 220px;
+    text-align: center;
+}
+
+.plan-card h3 {
+    margin-bottom: 5px;
+}
+
+.plan-card .price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+
+.plan-card .price span {
+    font-size: 14px;
+    color: #777;
+}
+
+.plan-card ul {
+    list-style: none;
+    text-align: left;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.plan-card ul li {
+    padding: 4px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.plan-card ul li::before {
+    content: "✓ ";
+    color: #27ae60;
+    font-weight: bold;
+}
+
+
+
+/* Cuisine sections */
+.cuisine {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.cuisine img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.cuisine-info {
+    flex: 1;
+}
+
+.cuisine-info p {
+    margin-bottom: 8px;
+}
+
+/* Steps */
+.steps {
+    counter-reset: step;
+}
+
+.step {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px 20px 15px 70px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.step::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    background: #e67e22;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.step h3 {
+    margin-bottom: 5px;
+}
+
+/* Delivery info */
+.delivery-info {
+    background: #fef5e7;
+    border-left: 4px solid #e67e22;
+    padding: 15px 20px;
+    border-radius: 0 6px 6px 0;
+}
+
+/* Forms */
+form {
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d35400;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+legend {
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 0 8px;
+}
+
+/* Contact info */
+.contact-details {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #e67e22;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cuisine {
+        flex-direction: column;
+    }
+    .cuisine img {
+        width: 100%;
+    }
+    .features {
+        flex-direction: column;
+    }
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+}

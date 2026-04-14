@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavorySphere - Meal Plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>SavorySphere</h1>
+            <nav>
+                                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cuisines.html">Cuisines</a></li>
+                    <li><a href="howitworks.html">How It Works</a></li>
+                    <li><a href="mealplans.html" class="active">Meal Plans</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Our Subscription Plans</h2>
+            <p>Choose a plan that works for you. All plans include daily meal delivery in your chosen cuisine (Arabic, Asian, or American). Longer plans offer better value for money.</p>
+        </section>
+
+        <section>
+            <div class="plans">
+                <article class="plan-card">
+                    <h3>1 Month</h3>
+                    <div class="price">25 <span>BHD</span></div>
+                    <ul>
+                        <li>1 meal per day</li>
+                        <li>Choose any cuisine</li>
+                        <li>Free delivery</li>
+                        <li>Cancel anytime</li>
+                    </ul>
+                </article>
+
+                <article class="plan-card">
+                    <h3>3 Months</h3>
+                    <div class="price">70 <span>BHD</span></div>
+                    <ul>
+                        <li>1 meal per day</li>
+                        <li>Choose any cuisine</li>
+                        <li>Free delivery</li>
+                        <li>Save 5 BHD</li>
+                    </ul>
+                </article>
+
+                <article class="plan-card">
+                    <h3>6 Months</h3>
+                    <div class="price">130 <span>BHD</span></div>
+                    <ul>
+                        <li>1 meal per day</li>
+                        <li>Choose any cuisine</li>
+                        <li>Free delivery</li>
+                        <li>Save 20 BHD</li>
+                    </ul>
+                </article>
+
+                <article class="plan-card">
+                    <h3>1 Year</h3>
+                    <div class="price">240 <span>BHD</span></div>
+                    <ul>
+                        <li>1 meal per day</li>
+                        <li>Choose any cuisine</li>
+                        <li>Free delivery</li>
+                        <li>Save 60 BHD</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Subscribe Now</h2>
+            <p>Fill in the form below to start your meal subscription. Please provide your delivery address so we can deliver meals to your location in Bahrain.</p>
+
+            <form action="#" method="post" id="subscribeForm">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. +973 3X XX XXXX" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Choose Your Plan</legend>
+                    <label for="cuisine">Cuisine:</label>
+                    <select id="cuisine" name="cuisine" required>
+                        <option value="">-- Select Cuisine --</option>
+                        <option value="arabic">Arabic</option>
+                        <option value="asian">Asian</option>
+                        <option value="american">American</option>
+                    </select>
+
+                    <label for="plan">Subscription Duration:</label>
+                    <select id="plan" name="plan" required>
+                        <option value="">-- Select Plan --</option>
+                        <option value="1month">1 Month - 25 BHD</option>
+                        <option value="3months">3 Months - 70 BHD</option>
+                        <option value="6months">6 Months - 130 BHD</option>
+                        <option value="1year">1 Year - 240 BHD</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Delivery Address (Bahrain)</legend>
+                    <label for="building">House / Building Number:</label>
+                    <input type="text" id="building" name="building" placeholder="e.g. Building 45" required>
+
+                    <label for="road">Road:</label>
+                    <input type="text" id="road" name="road" placeholder="e.g. Road 1234" required>
+
+                    <label for="block">Block:</label>
+                    <input type="text" id="block" name="block" placeholder="e.g. Block 301" required>
+
+                    <label for="area">Area:</label>
+                    <input type="text" id="area" name="area" placeholder="e.g. Manama, Muharraq, Riffa" required>
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" placeholder="e.g. Manama" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment Method</legend>
+                    <label for="payment">Payment:</label>
+                    <select id="payment" name="payment" required>
+                        <option value="">-- Select Payment --</option>
+                        <option value="card">Debit/Credit Card</option>
+                        <option value="benefit">BenefitPay</option>
+                        <option value="cash">Cash on Delivery</option>
+                    </select>
+                </fieldset>
+
+                <button type="button" onclick="document.getElementById('subscribeForm').reset(); alert('Subscription confirmed! Thank you.');">Confirm Subscription</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SavorySphere | Company Number: 17329543 | <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>
