@@ -1,5 +1,5 @@
-/* SavorySphere - Meal Subscription Service */
-/* Student Number: 17329543 */
+/* SavorySphere Meal Subscription Service */
+/* Student id: @00801226 */
 
 * {
     margin: 0;
@@ -189,6 +189,7 @@ section {
 /* Cuisine sections */
 .cuisine {
     display: flex;
+    flex-wrap: wrap; 
     gap: 20px;
     align-items: center;
     background: #fff;
@@ -196,6 +197,12 @@ section {
     border-radius: 8px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
+}
+
+
+.cuisine h2 {
+    width: 100%;
+    margin-bottom: 0; 
 }
 
 .cuisine img {
